@@ -1,7 +1,7 @@
 import LogInForm from "@/components/ui/log-in-form";
 import Logo from "@/components/ui/logo";
 import { createPagesServerClient } from "@supabase/auth-helpers-nextjs";
-import { GetServerSidePropsContext } from "next";
+import { type GetServerSidePropsContext } from "next";
 import { useRouter } from "next/router";
 import Head from "next/head";
 

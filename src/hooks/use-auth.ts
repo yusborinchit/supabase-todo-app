@@ -1,4 +1,4 @@
-import type { LogInData, SignUpData } from "@/types";
+import { type LogInData, type SignUpData } from "@/types";
 import { useSessionContext } from "@supabase/auth-helpers-react";
 import { useRouter } from "next/router";
 

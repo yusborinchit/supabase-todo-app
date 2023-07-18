@@ -7,8 +7,6 @@ function zodToFormErrors(zodError: ZodError) {
     errors.map(({ path, message }) => [path[0], message])
   );
 
-  console.log(mappedErrors);
-
   return mappedErrors;
 }
 

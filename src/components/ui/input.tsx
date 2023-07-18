@@ -17,9 +17,9 @@ function Input({ label, type, name, error }: InputProps) {
         className="relative block border rounded group-data-[error=true]:border-red-300 border-zinc-300 focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-500 group-data-[error=true]:focus-within:ring-red-500 group-data-[error=true]:focus-within:border-red-600"
       >
         <input
+          id={id}
           type={type}
           name={name}
-          id={id}
           placeholder={label}
           className="w-full placeholder-transparent bg-transparent border-none rounded peer focus:border-transparent focus:outline-none focus:ring-0 group-data-[error=true]:text-red-500"
         />
