@@ -30,7 +30,7 @@ function SignIn() {
                 Join us today<span className="text-blue-500">!</span>
               </p>
             </header>
-            <main>
+            <main className="px-4">
               <SignUpForm onSuccess={handleSuccess} />
             </main>
           </>

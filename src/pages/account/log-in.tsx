@@ -27,7 +27,7 @@ function LogIn() {
             Welcome back<span className="text-blue-500">!</span>
           </p>
         </header>
-        <main>
+        <main className="px-4">
           <LogInForm onSuccess={handleSuccess} />
         </main>
       </div>
