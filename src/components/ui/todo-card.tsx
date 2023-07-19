@@ -13,17 +13,17 @@ function TodoCard({
   onDelete,
 }: TodoCardProps) {
   return (
-    <li className="flex items-center w-full gap-4 px-4 py-2">
+    <li className="flex items-center w-full gap-4 px-4 border rounded border-zinc-200 bg-zinc-100">
       <input
         id={id}
         type="checkbox"
         checked={isChecked}
         onChange={() => onToggle(id)}
-        className="border-blue-500 rounded cursor-pointer accent-blue-500 focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-500 peer"
+        className="rounded cursor-pointer border-zinc-500 accent-blue-500 focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-500 peer"
       />
       <label
         htmlFor={id}
-        className="w-full break-all cursor-pointer break-before-all peer-checked:text-gray-400 peer-checked:line-through"
+        className="w-full py-4 break-all cursor-pointer break-before-all peer-checked:line-through"
       >
         {todo}
       </label>

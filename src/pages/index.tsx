@@ -1,3 +1,4 @@
+import LogOutIcon from "@/components/icons/log-out-icon";
 import Logo from "@/components/ui/logo";
 import TodosList from "@/components/ui/todos-list";
 import { useAuth } from "@/hooks/use-auth";
@@ -27,9 +28,9 @@ function Home({ session }: HomeProps) {
         {!!session ? (
           <button
             onClick={() => logOut()}
-            className="flex px-6 py-2 ml-auto text-sm font-bold text-white capitalize rounded bg-gradient-to-t from-blue-700 to-blue-500"
+            className="flex p-2 ml-auto text-sm font-bold text-white capitalize rounded bg-gradient-to-t from-blue-700 to-blue-500"
           >
-            Log Out
+            <LogOutIcon />
           </button>
         ) : (
           <Link
